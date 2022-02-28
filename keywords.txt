@@ -1,0 +1,27 @@
+#######################################
+# Syntax Coloring Map ModBusRTU
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ModBusRTU	KEYWORD1
+ModBusRTU0	KEYWORD1
+ModBusRTU1	KEYWORD1
+ModBusRTU2	KEYWORD1
+ModBusRTU3	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+begin	KEYWORD2
+process	KEYWORD2
+receiveHandler	KEYWORD2
+transmitHandler	KEYWORD2
+prepareResponse01	KEYWORD2
+prepareResponse03	KEYWORD2
+prepareResponse06	KEYWORD2
+prepareResponse16	KEYWORD2
+afterFinishMethod	KEYWORD2
+
