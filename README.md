@@ -57,7 +57,10 @@ As you can see you have to do some configuration work on your own. Which is sett
 Transmit pin is set to high level when the device starts transmitting.
 
 You also have to set function handler for prepareResponse for cmd `03`
-Each of these prepareResponseXX functions requires the length of the data part of response to be returned.  
+Each of these prepareResponseXX functions requires the length of the data part of response to be returned.
+
+Additionally you can use overloaded constructor passing information about CRC part of the reponse indicating if it should be send as BigEndian - (true) - default. 
+It was prepared as some devices expecting it to be other way around, e.g Siemens PLCs.
 
 ### Full cmd handling
 
