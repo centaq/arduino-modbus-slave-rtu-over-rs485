@@ -29,7 +29,7 @@ void ModBusSlave::startUSART(uint32_t baud) {
 	*_ubrrh = (unsigned char)(ubrr>>8);
 	*_ubrrl = (unsigned char)ubrr;
 	*_ucsrb = (1<<RXEN0)|(1<<TXEN0)|(1<<RXCIE0)|(1<<TXCIE0);
-	*_ucsrc |= (3<<UCSZ10);
+	*_ucsrc |= (3<<UCSZ00);
 }
 
 void ModBusSlave::resetUSARTTransmitFlag() {
