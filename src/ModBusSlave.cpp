@@ -101,6 +101,17 @@ void ModBusSlave::transmitHandler() {
 	}
 }
 
+void ModBusSlave::test() {
+	_tx_size = 0;
+	
+	_tx_buffer[_tx_size++] = 3;
+	_tx_buffer[_tx_size++] = 12;
+	_tx_buffer[_tx_size++] = 1;
+	_tx_buffer[_tx_size++] = 2;
+	_tx_buffer[_tx_size++] = 3;
+	_tx_buffer[_tx_size++] = 4;
+}
+
 void ModBusSlave::prepareResponse() {
 	char data[128];
 	

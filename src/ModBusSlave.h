@@ -31,6 +31,7 @@ class ModBusSlave
 		
 	void receiveHandler();
 	void transmitHandler();
+	void test();
 	
     uint8_t (*prepareResponse01)(uint8_t *frame, char *data);
     uint8_t (*prepareResponse03)(uint8_t *frame, char *data);
